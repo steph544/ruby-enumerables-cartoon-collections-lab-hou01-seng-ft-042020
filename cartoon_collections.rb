@@ -31,6 +31,7 @@ def find_the_cheese(string)
     i=0 
     while i<string.length 
       if string.include?(cheese_types[i])  
+      if string.include?(cheese_types[i])   
         return string.detect {|name| name == cheese_types[i]} 
       else
         nil 
